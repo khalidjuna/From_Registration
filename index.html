@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Student Registration Form</h2>
+        <form id="registrationForm">
+            <!-- ... existing HTML ... -->
+            <div class="form-group">
+                <label for="studentName">Student Name:</label>
+                <input type="text" id="studentName" name="studentName" required>
+                <ul id="nameSuggestions" class="suggestions"></ul>
+            </div>
+            <div class="form-group">
+                <label for="studentID">NIM:</label>
+                <input type="text" id="studentID" name="studentID" required>
+                <ul id="nimSuggestions" class="suggestions"></ul>
+            </div>
+            <div class="form-group">
+                <label for="course">Course:</label>
+                <input type="text" id="course" name="course" required>
+                <ul id="courseSuggestions" class="suggestions"></ul>
+            </div>
+            <div class="form-group">
+                <label for="instructor">Instructor:</label>
+                <input type="text" id="instructor" name="instructor" required>
+                <ul id="instructorSuggestions" class="suggestions"></ul>
+            </div>
+            <!-- ... -->
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
